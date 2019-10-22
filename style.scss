@@ -1,0 +1,673 @@
+@import url(reset.css);
+$font: "Comic Sans MS";
+$shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.07), -4.243px 4.243px 23.76px 0.24px rgba(0, 0, 0, 0.15);
+%button-style {
+  border-radius: 5px;
+  background-image: -moz-linear-gradient(41deg, rgb(251, 106, 78) 0%, rgb(255, 96, 106) 100%);
+  background-image: -webkit-linear-gradient(41deg, rgb(251, 106, 78) 0%, rgb(255, 96, 106) 100%);
+  background-image: -ms-linear-gradient(41deg, rgb(251, 106, 78) 0%, rgb(255, 96, 106) 100%);
+  width: 243px;
+  height: 60px;
+  margin-top: 50px;
+  margin-left: 45px;
+  font-size: 18px;
+  font-family: $font;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.222;
+  border-width: 0px;
+}
+%span-style {
+  font-size: 20px;
+  font-family: $font;
+  text-transform: uppercase;
+  line-height: 1.1;
+  text-align: left;
+  position: absolute;
+  top: 360px;
+}
+%outline {
+  outline: 0;
+  outline-offset: 0;
+}
+%sotial-network {
+  width: 45px;
+  height: 45px;
+  background-repeat: no-repeat;
+}
+button {
+  cursor: pointer;
+}
+header {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1920px;
+  height: 1050px;
+  .header_img {
+    float: right;
+  }
+  .header_img_logo {
+    position: absolute;
+    top: 210px;
+    left: 845px;
+  }
+  .header_menu {
+    position: absolute;
+    left: 911px;
+    top: 60px;
+  }
+  a {
+    font-size: 18px;
+    font-family: $font;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 1.222;
+    text-align: left;
+    margin-right: 40px;
+    text-decoration: none;
+  }
+}
+
+.form_send {
+  span {
+    @extend %span-style;
+    color: #272f2f;
+    left: 415px;
+  }
+  form {
+    position: absolute;
+    left: 370px;
+    top: 465px;
+  }
+  form {
+    input {
+      width: 335px;
+      height: 40px;
+      border-width: 0px;
+    }
+    input[type="text"] {
+      width: 335px;
+      height: 40px;
+      font-size: 16px;
+      font-family: $font;
+      color: #272f2f;
+      line-height: 1.375;
+      text-align: left;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #32cfb6;
+    }
+    input[type="text"] ::placeholder {
+      color: #a1a4a4;
+    }
+    label {
+      font-size: 14px;
+      font-family: $font;
+      color: rgb(29, 184, 164);
+      text-transform: uppercase;
+      line-height: 1.571;
+      text-align: left;
+    }
+    input[type="email"] {
+      width: 335px;
+      height: 40px;
+      border-width: 0px;
+      font-size: 16px;
+      font-family: $font;
+      line-height: 1.375;
+      text-align: left;
+      margin-top: 10px;
+      color: #272f2f;
+      border-bottom: 2px solid #32cfb6;
+    }
+    input[type="email"] ::placeholder {
+      color: #a1a4a4;
+    }
+    input [type="text"] input[type="email"] :active,
+    :hover,
+    :focus {
+      @extend %outline;
+    }
+    button {
+      @extend %button-style;
+    }
+  }
+}
+.left_img {
+  position: absolute;
+  top: 830px;
+}
+
+.our_requirement {
+  width: 1920px;
+  height: 960px;
+}
+.our_requirement {
+  p {
+    font-size: 30px;
+    font-family: $font;
+    color: rgb(39, 47, 47);
+    text-transform: uppercase;
+    line-height: 0.733;
+    text-align: left;
+    position: absolute;
+    left: 803px;
+    top: 1097.982px;
+    margin-bottom: 100px;
+  }
+  .requirement_box {
+    width: 1200px;
+    height: 685px;
+    margin: 0 365px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    position: absolute;
+    top: 1200px;
+  }
+  .requirement_box {
+    figure {
+      width: 280px;
+      height: 286px;
+      text-align: center;
+      border-radius: 10px;
+      background-color: rgb(250, 250, 250);
+      box-shadow: $shadow;
+    }
+
+    img {
+      margin-top: 20px;
+    }
+
+    figcaption {
+      font-size: 14px;
+      font-family: $font;
+      color: rgb(39, 47, 47);
+      line-height: 1.571;
+      width: 243px;
+      height: 59px;
+      margin-left: 20px;
+      text-align: left;
+      margin-top: 15px;
+    }
+    .text5 {
+      margin-top: 23px;
+    }
+
+    .text6 {
+      margin-top: 55px;
+    }
+
+    .text7 {
+      margin-top: 55px;
+    }
+
+    .text8 {
+      margin-top: 25px;
+    }
+  }
+}
+
+.help {
+  width: 1920px;
+  height: 890px;
+  background-color: #1ea992;
+  position: absolute;
+  top: 2010px;
+}
+.icons {
+  margin-top: 135px;
+  margin-left: 385px;
+  position: relative;
+}
+.help {
+  img {
+    position: absolute;
+  }
+
+  .help_logo {
+    font-size: 30px;
+    font-family: $font;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 0.733;
+    margin-top: 40px;
+    margin-left: 940px;
+  }
+  .text1 {
+    font-size: 16px;
+    font-family: $font;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.625;
+    text-align: left;
+    margin-left: 1055px;
+    margin-top: 90px;
+  }
+  .help_box1::before {
+    content: "1.";
+    font-size: 60px;
+    font-family: $font;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 0.433;
+    text-align: left;
+    position: absolute;
+    top: 160px;
+    left: 985px;
+  }
+  .text2 {
+    font-size: 16px;
+    font-family: $font;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.625;
+    text-align: left;
+    margin-left: 1170px;
+    margin-top: 90px;
+  }
+
+  .help_box2::before {
+    content: "2.";
+    font-size: 60px;
+    font-family: $font;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 0.433;
+    text-align: left;
+    position: absolute;
+    top: 380px;
+    left: 1080px;
+  }
+
+  .text3 {
+    font-size: 16px;
+    font-family: $font;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.625;
+    text-align: left;
+    position: absolute;
+    top: 520px;
+    left: 1060px;
+  }
+
+  .help_box3::before {
+    content: "3.";
+    font-size: 60px;
+    font-family: $font;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 0.433;
+    text-align: left;
+    position: absolute;
+    top: 20px;
+    left: -80px;
+  }
+
+  .text4 {
+    font-size: 16px;
+    font-family: $font;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.625;
+    text-align: left;
+    width: 360px;
+    position: absolute;
+    top: 710px;
+    left: 1175px;
+  }
+
+  .help_box4::before {
+    content: "4.";
+    font-size: 60px;
+    font-family: $font;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 0.433;
+    text-align: left;
+    position: absolute;
+    top: 20px;
+    left: -80px;
+  }
+}
+
+.we_offer {
+  width: 1920px;
+  height: 935px;
+  position: absolute;
+  top: 2900px;
+}
+.we_offer {
+  p {
+    font-size: 30px;
+    font-family: $font;
+    color: rgb(39, 47, 47);
+    text-transform: uppercase;
+    line-height: 0.733;
+    text-align: left;
+    position: absolute;
+    left: 874px;
+    top: 80px;
+  }
+  .offer_boxes {
+    width: 1110px;
+    height: 670px;
+    margin-top: 230px;
+    margin-left: 450px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  .offer_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .offer_boxes > div {
+    width: 30%;
+  }
+  .offer_boxes {
+    span {
+      font-size: 18px;
+      font-family: "Comic Sans MS";
+      color: rgb(39, 47, 47);
+      text-transform: uppercase;
+      line-height: 1.222;
+      margin-top: 25px;
+    }
+  }
+  .img1 {
+    width: 170px;
+    height: 180px;
+    background-image: url(icons/offers/1.png);
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+  .offer_box1 :hover {
+    background: url(icons/offers/hover2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 190px;
+    height: 200px;
+    margin-top: -20px;
+  }
+
+  .img2 {
+    width: 170px;
+    height: 180px;
+    background-image: url(icons/offers/2.png);
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+
+  .offer_box2 :hover {
+    background: url(icons/offers/hover1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 190px;
+    height: 200px;
+    margin-top: -20px;
+  }
+
+  .img3 {
+    width: 170px;
+    height: 180px;
+    background-image: url(icons/offers/3.png);
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+
+  .offer_box3 :hover {
+    background: url(icons/offers/hover3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 190px;
+    height: 200px;
+    margin-top: -20px;
+  }
+
+  .img4 {
+    width: 170px;
+    height: 180px;
+    background-image: url(icons/offers/4.png);
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+
+  .offer_box4 :hover {
+    background: url(icons/offers/hover4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 190px;
+    height: 200px;
+    margin-top: -20px;
+  }
+
+  .img5 {
+    width: 170px;
+    height: 180px;
+    background-image: url(icons/offers/5.png);
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+
+  .offer_box5 :hover {
+    background: url(icons/offers/hover5.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 190px;
+    height: 200px;
+    margin-top: -20px;
+  }
+
+  .img6 {
+    width: 170px;
+    height: 180px;
+    background-image: url(icons/offers/6.png);
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+
+  .offer_box6 :hover {
+    background: url(icons/offers/hover6.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 190px;
+    height: 200px;
+    margin-top: -20px;
+  }
+}
+
+.left_img2 {
+  position: absolute;
+  top: 125px;
+  left: 1682px;
+}
+
+.contacts {
+  position: absolute;
+  top: 3820px;
+  width: 1920px;
+  height: 1535px;
+  background-image: url(icons/bg_png/3.png);
+  background-repeat: no-repeat;
+}
+.contacts {
+  .cont_logo {
+    font-size: 30px;
+    font-family: $font;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 0.733;
+    text-align: left;
+    margin-left: 872px;
+    margin-top: 180px;
+  }
+  .contacts_boxes {
+    width: 1050px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+  }
+  .box1 {
+    span {
+      @extend %span-style;
+      color: #ffffff;
+      left: 530px;
+    }
+    form {
+      position: absolute;
+      left: 450px;
+      top: 420px;
+    }
+  }
+  .box1 form {
+    input {
+      width: 335px;
+      height: 40px;
+      border-width: 0px;
+    }
+    input[type="text"] {
+      width: 335px;
+      height: 40px;
+      font-size: 16px;
+      font-family: $font;
+      color: #ffffff;
+      line-height: 1.375;
+      text-align: left;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #32cfb6;
+      background-color: transparent;
+    }
+    input[type="text"] ::placeholder {
+      color: #9d9da2;
+    }
+    label {
+      font-size: 14px;
+      font-family: $font;
+      color: rgb(29, 184, 164);
+      text-transform: uppercase;
+      line-height: 1.571;
+      text-align: left;
+    }
+    input[type="email"] {
+      width: 335px;
+      height: 40px;
+      border-width: 0px;
+      font-size: 16px;
+      font-family: $font;
+      line-height: 1.375;
+      text-align: left;
+      margin-top: 10px;
+      color: #d8d8da;
+      border-bottom: 2px solid #32cfb6;
+      background-color: transparent;
+    }
+    input[type="email"] ::placeholder {
+      color: #9d9da2;
+    }
+    input [type="text"] input[type="email"] :active,
+    :hover,
+    :focus {
+      @extend %outline;
+    }
+    button {
+      @extend %button-style;
+    }
+  }
+}
+
+.box2 {
+  width: 320px;
+  height: 320px;
+  margin-left: 1180px;
+}
+.box2 {
+  .cont_get {
+    width: 200px;
+    font-size: 20px;
+    font-family: $font;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.65;
+    text-align: left;
+    margin-top: 150px;
+    margin-bottom: 65px;
+  }
+  .cont_inf {
+    span {
+      font-size: 16px;
+      font-family: $font;
+      color: rgb(255, 255, 255);
+      text-transform: uppercase;
+      line-height: 2.375;
+      text-align: left;
+    }
+    p {
+      width: 350px;
+      font-size: 16px;
+      font-family: $font;
+      color: rgb(255, 255, 255);
+      line-height: 2.375;
+      text-align: left;
+    }
+  }
+  .sotial_networks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 210px;
+    margin-top: 80px;
+  }
+  .linkedin {
+    @extend %sotial-network;
+    background-image: url(icons/sotial_network/linkedin.png);
+  }
+
+  .twitter {
+    @extend %sotial-network;
+    background-image: url(icons/sotial_network/twitter.png);
+  }
+
+  .facebook {
+    @extend %sotial-network;
+    background-image: url(icons/sotial_network/fb.png);
+  }
+
+  .linkedin :active {
+    @extend %sotial-network;
+    background-image: url(icons/sotial_network/linkedin_active.png);
+  }
+
+  .twitter :active {
+    @extend %sotial-network;
+    background-image: url(icons/sotial_network/twiter_active.png);
+  }
+
+  .facebook :active {
+    @extend %sotial-network;
+    background-image: url(icons/sotial_network/fb_active.png);
+  }
+}
+
+.map {
+  position: absolute;
+  top: 4620px;
+}
+
+// .pin {
+//   position: absolute;
+//   top: 5130px;
+//   left: 995px;
+// }
+
+.footer {
+  text-transform: uppercase;
+  position: absolute;
+  top: 5305px;
+  left: 880px;
+  color: #ffffff;
+  font-family: $font;
+  color: rgb(255, 255, 255);
+}
